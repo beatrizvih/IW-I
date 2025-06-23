@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>cadastro</title>
+     <style> 
+       title {
+        font-family:  sans-serif;
+        width: 10%;
+       }
+       
+       * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5
+    
+        }
+
+        .form-fundo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-login,  .form-cadastro {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0,.1);
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .btn_1, .btn_2 {
+            width: 100%;
+            padding: 12px;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn_1 {
+            background-color: plum;
+        }
+
+        .btn_1:hover {
+            background-color: azure;
+        }
+        .btn_2 {
+            background-color: rgb(134, 178, 216);
+        }
+
+        .btn_2:hover {
+            background-color: cornsilk;
+        }
+
+     </style>
+    
+    
+    </head>
+
+    
+    <body>
+        <h1>cadastro</h1>
+        <div class="form-fundo">
+            <div class="form-cadastro">
+                <form id="cadastro-form">
+                    <label for="nome">nome completo</label>
+                    <input type="nome" id="nome" nome="nome" required/>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" nome="email" required/>
+
+                    <label for="telefone">telefone</label>
+                    <input type="telefone" id="telefone" nome="telefone" required/>
+
+                    <label for="cpf">cpf</label>
+                    <input type="cpf" id="cpf" nome="cpf" required/>    
+                    
+                    <label for="senha">senha</label>
+                    <input type="senha" id="senha" nome="senha" required/>
+
+                    <label for="confirmar-senha">confirmar-senha</label>
+                    <input type="confirmar-senha" id="confirmar-senha" nome="confirmar-senha" required/>
+
+                    <button type="submit" class="btn_1">cadastrar</button>
+                    <button class="btn_2" type="button" onclick="Window.location.href'">Fazer login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
