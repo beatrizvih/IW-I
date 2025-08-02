@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Tabela 2 </title>
+ <style>
+  
+  
+  h1 {
+  text-align: center;
+  color: black;
+  font-family: Lucida Bright;
+  font-size: 55px;
+  }
+  body {
+     font-family: Arial;
+     background-color: rgb(246, 239, 253);
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: rgb(3, 3, 3);
+    background-color: rgb(246, 238, 253);
+    
+  }
+  caption {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(1, 56, 17);
+    font-family: Garamond;
+    background-color: rgb(232, 181, 255);
+  }
+  th {
+    padding: 15px;
+    font-family: Lucida Bright; 
+    font-size: 18px;
+    color: rgb(74, 0, 83);
+    background-color: rgb(236, 217, 243);
+  }
+  td {
+
+    padding: 10px;
+    font-family: Optima; 
+    font-size: 19px;
+    color: rgb(86, 64, 99);
+
+  }
+  img {
+    height: 50px;
+    width: 75px;
+    border-radius: 8px;
+  }
+  tfoot {
+   background-color: rgb(218, 149, 240);
+   border-radius: 8px;
+  }
+  thead {
+  background-color: rgb(183, 117, 245);
+  }
+  tbody > tr:nth-child(odd) {
+    background-color: rgb(243, 230, 247);
+
+  }
+  
+ </style>
+</head>
+<body>
+    <h1>Tabela de Comidas</h1>
+       <table>
+        <caption>Comidas favoritas</caption> 
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3" scope="colgroup">Escolhas</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th colspan="3" class="num">12 opções</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+                <th rowspan="2">Mulheres</th>
+                <td>Maria</td>
+                <td><img src="imagens comidas/churraso.jpg"></td>
+                <td><img src="imagens comidas/comida 1.jpg"></td>
+                <td><img src="imagens comidas/coxinha.jpg"></td>
+            </tr>
+            <tr>
+                <td>Mariana</td>
+                <td><img src="imagens comidas/frango frito.jpg"></td>
+                <td><img src="imagens comidas/katsu curry.jpg"></td>
+                <td><img src="imagens comidas/lasanha.jpg"></td>
+            </tr>
+            <tr>
+                <th rowspan="2">Homens</th>
+                <td>Luiz</td>
+                <td><img src="imagens comidas/pastel.jpg"></td>
+                <td><img src="imagens comidas/pizza.jpg"></td>
+                <td><img src="imagens comidas/sanduiche de frango.jpg"></td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td><img src="imagens comidas/spagetti carbonara.jpg"></td>
+                <td><img src="imagens comidas/sushi.jpg"></td>
+                <td><img src="imagens comidas/yaksoba.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+</body>
+</html>
